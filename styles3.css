@@ -1,0 +1,206 @@
+/* General styles */
+body {
+    font-family: 'Comic Sans MS';
+    background-color: #4b8b13; /* Saddle Brown */
+    color: #6b8e23; /* Olive Drab */
+}
+
+.navbar {
+    background-color: #606b15; /* Rosy Brown */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2f4f4f; /* Dark Slate Gray */
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* Shadow */
+    margin-bottom: 20px;
+}
+
+.burger-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    color: #000000; /* Dark Slate Gray */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    order: 2;
+    margin-right: 50px;
+    color: #011701; /* Forest Green */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    z-index: 1; 
+}
+
+.nav-links li {
+    margin-right: 20px;
+    text-align: left;
+    font-size: large;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* Olive Drab */
+    font-size: 25px;
+    text-shadow: 0 0 10px rgba(107, 142, 35, 0.8); /* Shadow */
+    font-weight: normal;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 10px rgba(107, 142, 35, 0.8); /* Hover Shadow */
+}
+
+header {
+    background-color: #bc8f8f; /* Rosy Brown */
+    color: #000000; /* Dark Slate Gray */
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image container styles */
+.image-container1, .survey1, .survey3, .survey5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container1 img {
+    max-width: 276px;
+    max-height: 183px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow */
+}
+
+.image-container2, .survey2, .survey4 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20px;
+}
+
+.image-container2 img {
+    max-width: 276px;
+    max-height: 183px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow */
+}
+
+/* Caption styles */
+.caption {
+    
+    color: #000000; /* Dark Slate Gray */
+    font-size: 14px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #35321a; /* Rosy Brown */
+    color: #ffffff; /* Dark Slate Gray */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Survey section styles */
+.survey1, .survey3, .survey5 {
+    background-color: #dece87; /* Burlywood */
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(47, 21, 3, 0.5); /* Shadow */
+    padding: 20px;
+    margin-bottom: 40px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: right;
+    text-align: right;
+}
+
+.survey2, .survey4 {
+    background-color: #dadc76; /* Tan */
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(139, 69, 19, 0.5); /* Shadow */
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+}
+
+.info {
+    margin-left: 20px;
+    flex: 1;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #0f1c0f;
+}
+
+.info p {
+    margin: 0;
+    padding: 15px 0;
+    color: #000000;
+}
+
+
+@media (max-width: 550px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger-menu {
+        display: block;
+        align-self: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 88px;
+        left: 0;
+        width: 100%;
+        background-color: #6b532f; /* Dark Olive Green */
+        margin: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-top: none;
+        align-self: flex-end;
+        margin-top: -30px;
+        color: #000000; /* Sea Green */
+    }
+
+    .cyberpunk-title {
+        margin-top: 20px;
+    }
+}
