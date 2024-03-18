@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма</title>
+<link rel="icon" href="image/krack.gif">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFDDFF;
+    color: #61004d;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFE6EE;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(252, 0, 185, 0.714);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="file"],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FF80BF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #FFE0F0;
+    color: #FF007F;
+}
+
+.input-group input[type="checkbox"],
+.input-group input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF80BF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #FF007F;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(252, 0, 185, 0.714);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form action="cat.html" method="post" id="myForm" onsubmit="return confirmSubmit()">
+        <div class="input-group">
+            <label for="username">Ім'я:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="input-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="input-group">
+            <h1>Ви ознайомлені з правилами?<a href="https://kyivcity.gov.ua/navkolyshnie_seredovyshche_mista/tvaryny/pravila_utrimannya_i_doglyadu_za_domashnimi_tvarinami/"><img src="image/why.png"  height="50" width="50"></a></h1>
+            <input type="checkbox" id="check1" name="check1">
+            <label for="check1">Так</label>
+            <input type="checkbox" id="check2" name="check2">
+            <label for="check2">Ні</label>
+            
+        </div>
+        <div class="input-group">
+            <h1>Оберіть стать тварини</h1>
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio1">Жіноча</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Чоловіча</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Все одно</label>
+        </div>
+        <div class="input-group">
+            <h1>Надішліть файл з заповноною заявою:</h1>
+            <label for="file">Поле для файлів:</label>
+            <input type="file" name="file" size="70">
+        </div>
+        <div class="input-group">
+            <label for="select">І'мя улюбленця що вас зацікавив:</label>
+            <select id="select" name="select">
+                <option value="option1">Мордор</option>
+                <option value="option2">Аура</option>
+                <option value="option3">Рубін</option>
+                <option value="option4">Блекі</option>
+                <option value="option5">Богдан</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn">Відправити</button>
+            <button type="reset" class="btn">Очистити</button>
+        </div>
+    </form>
+</div>
+
+<script>
+function confirmSubmit() {
+    return confirm("Ви впевнені, що хочете відправити форму?");
+}
+</script>
+
+</body>
+</html>
