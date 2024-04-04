@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>On-site</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="backgroundBg">
+    <div class="templateWidth">
+      <form name='form' id='form'>
+        <div class="templateWrapper">
+          <!---------template Header Starts Here---------->
+          <ul class="tempHeadBdr">
+            <li class="tempHeadContBdr">
+              <h2 class="frmTitle">
+                <em>Ducky Kittens</em>
+              </h2>
+              <p class="frmDesc">Tell about us to your friends and be responsible!</p>
+              <div class="clearBoth"></div>
+            </li>
+          </ul>
+          <!---------template Container Starts Here---------->
+          <div class="subContWrap topAlign">
+            <ul>
+              <!---------Single Line Starts Here---------->
+              <li class="tempFrmWrapper large">
+                <label class="labelName"> Kitten's Parent name <em class="important">*</em>
+                </label>
+                <div class="tempContDiv">
+                  <span>
+                    <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
+                  </span>
+                  <p id="SingleLine_error" class="errorMessage" style="display:none;">Invalid value</p>
+                </div>
+                <div class="clearBoth"></div>
+              </li>
+              <!---------Address Starts Here---------->
+              <li class="tempFrmWrapper address addrlarge ">
+                <label class="labelName"> Where do you live? <em class="important">*</em>
+                </label>
+                <div class="tempContDiv address">
+                  <div class="addrCont">
+                    <span class="addOne">
+                      <input type="text" maxlength="255" name="Address_AddressLine1" checktype="c1" placeholder="" />
+                      <label class="smalLable">Street Address</label>
+                    </span>
+                    <span class="addOne">
+                      <input type="text" maxlength="255" name="Address_AddressLine2" checktype="c1" placeholder="" />
+                      <label class="smalLable">Address Line 2</label>
+                    </span>
+                    <span class="flLeft addtwo">
+                      <input type="text" maxlength="255" name="Address_City" checktype="c1" placeholder="" />
+                      <label class="smalLable">City</label>
+                    </span>
+                    <span class="flLeft addtwo">
+                      <input type="text" maxlength="255" name="Address_Region" checktype="c1" placeholder="" />
+                      <label class="smalLable">State/Region/Province</label>
+                    </span>
+                    <span class="flLeft addtwo">
+                      <input type="text" maxlength="255" name="Address_ZipCode" checktype="c1" placeholder="" />
+                      <label class="smalLable">Postal code</label>
+                    </span>
+                    <span class="flLeft addtwo">
+                      <select class="form-sBox" name="Address_Country" checktype="c1">
+                        <option value="-Select-">-Select-</option>
+                        <option>Kazakstan</option>
+                        <option>Poland</option>
+                        <option>Ukraine</option>
+                        <option>Germany</option>
+                        <option>United States</option>
+                      </select>
+                      <label class="smalLable">Country</label>
+                    </span>
+                    <div class="clearBoth"></div>
+                    <p id="Address_error" class="errorMessage" style="display:none;">Invalid value</p>
+                  </div>
+                </div>
+                <div class="eclearBoth"></div>
+              </li>
+              <!---------Radio Starts Here---------->
+              <li class="radio tempFrmWrapper oneColumns">
+                <label class="labelName">Does your kitten need gift box? <em class="important">*</em>
+                </label>
+                <div class="tempContDiv">
+                  <div class="overflow">
+                    <span class="multiAttType">
+                      <input class="radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Yes">
+                      <label for="Radio_1" class="radioChoice">Yes</label>
+                    </span>
+                    <span class="multiAttType">
+                      <input class="radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="No">
+                      <label for="Radio_2" class="radioChoice">No</label>
+                    </span>
+                    <div class="clearBoth"></div>
+                  </div>
+                  <p id="Radio_error" class="errorMessage" style="display:none;">Invalid value</p>
+                </div>
+                <div class="clearBoth"></div>
+              </li>
+              <!---------Checkbox Starts Here---------->
+              <li class="checkbox tempFrmWrapper oneColumns">
+                <label class="labelName">Which toys are you think your kitten would like? </label>
+                <div class="tempContDiv">
+                  <div class="overflow">
+                    <span class="multiAttType">
+                      <input class="checkBoxType" type="checkbox" id="Checkbox_1" name="Checkbox" checktype="c1" value="Yarn" />
+                      <label for="Checkbox_1" class="checkChoice">Yarn</label>
+                    </span>
+                    <span class="multiAttType">
+                      <input class="checkBoxType" type="checkbox" id="Checkbox_2" name="Checkbox" checktype="c1" value="Feather" />
+                      <label for="Checkbox_2" class="checkChoice">Feather</label>
+                    </span>
+                    <span class="multiAttType">
+                      <input class="checkBoxType" type="checkbox" id="Checkbox_3" name="Checkbox" checktype="c1" value="Mouse" />
+                      <label for="Checkbox_3" class="checkChoice">Mouse</label>
+                    </span>
+                    <span class="multiAttType">
+                      <input class="checkBoxType" type="checkbox" id="Checkbox_4" name="Checkbox" checktype="c1" value="Other" />
+                      <label for="Checkbox_4" class="checkChoice">Other</label>
+                    </span>
+                    <div class="clearBoth"></div>
+                  </div>
+                  <p id="Checkbox_error" class="errorMessage" style="display:none;">Invalid value</p>
+                </div>
+                <div class="clearBoth"></div>
+              </li>
+    
+              <li class="tempFrmWrapper large">
+                <label class="labelName"> Any question about all about adoption or gift box? </label>
+                <div class="tempContDiv">
+                  <span>
+                    <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder=""></textarea>
+                  </span>
+                  <p id="MultiLine_error" class="errorMessage" style="display:none;">Invalid value</p>
+                </div>
+                <div class="clearBoth"></div>
+              </li>
+             
+            </ul>
+          </div>
+       
+          <ul>
+            <li class="fmFooter">
+              <button type="submit" class="submitColor">Submit</button>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+	<script src="form.js"></script>
+  </body>
+</html>
