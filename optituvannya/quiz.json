@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "question": "Яка назва відомого мультфільму про іграшки?",
+      "type": "choice",
+      "answers": ["Крижане серце", "Мадагаскар", "Той, що літає на драконі", "Історія іграшок"],
+      "correct_answer": "Історія іграшок"
+    },
+    {
+      "question": "Як називається характерний звук, який виділяє кіт?",
+      "type": "choice",
+      "answers": ["Муркотіння", "Курчання", "Лаю", "Крякання"],
+      "correct_answer": "Муркотіння"
+    },
+    {
+      "question": "Як звуть кота з мультсеріалу 'Том і Джеррі'?",
+      "type": "choice",
+      "answers": ["Том", "Гарфілд", "Сільвестр", "Біллі"],
+      "correct_answer": "Том"
+    },
+    {
+      "question": "Як називається столиця Італії?",
+      "type": "choice",
+      "answers": ["Рим", "Мілан", "Неаполь", "Турин"],
+      "correct_answer": "Рим"
+      },
+    {
+      "question": "Найсильніший маг сучасності",
+      "type": "choice",
+      "answers": ["Годжо Сатору", "Мегумі Фушигуро", "Нанамі Кенто", "Чосо"],
+      "correct_answer": "Годжо Сатору"
+    },
+    {
+      "question": "Яку(і) з цих ігор створенно компанією Hoyoverse",
+      "type": "multiple_choice",
+      "answers": ["Genshin Impact", "Honkai Star Rail", "Battle Field", "Danganronpa"],
+      "correct_answer": ["Genshin Impact", "Honkai Star Rail"]
+    },
+    {
+      "question": "Яка найбільша пустеля у світі?",
+      "type": "text_entry",
+      "correct_answer": "Сахара"
+      },
+    {
+      "question": "Розрахуйте суму: 2+2",
+      "type": "numeric_entry",
+      "correct_answer": 5
+    }
+  ]
+}
